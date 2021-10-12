@@ -1,0 +1,267 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightgrey;
+}
+Navbar {
+    background-color: cornflowerblue;
+    font-size: 20px;
+}
+Navbar,
+.left,
+.right {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.left > * {
+    padding: 0px 10px;
+}
+.dropdown-content {
+    display: none;
+    margin-top: 3px;
+    width: 100px;
+    padding: 5px;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+}
+.dropdown-content > * {
+    padding: 3px 0px;
+    font-size: 15px;
+    text-decoration: none;
+    color: darkslateblue;
+}
+.dropdown-content > *:hover {
+    text-decoration: underline;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+.dropbtn {
+    font-size: 18px !important;
+    display: flex;
+    cursor: pointer;
+}
+.dropbtn > * {
+    padding: 0px 5px;
+}
+.dropbtn span {
+    color: lightgrey;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.dropdown:hover .dropbtn span {
+    display: block;
+    transform: rotate(180deg);
+}
+
+/* header-body */
+
+.header-body {
+    height: 450px;
+    background: url(./assets/images/gateway-banner-cs-animated-gray-bg-lg-desktop-v4.gif);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20%;
+}
+
+/* header-footer */
+
+.header-footer {
+    background-color: cornflowerblue;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-footer ul {
+    font-size: 18px;
+    display: flex;
+    list-style: none;
+    padding: auto;
+}
+.header-footer ul > * {
+    padding: 0px 5px;
+}
+/* --------------------------------------END OF HEADER-------------------------------- */
+
+/* section1 */
+
+.section1 {
+    height: 120px;
+    display: flex;
+}
+.section1 .card {
+    width: 20%;
+    background-color: white;
+    color: rgb(139, 129, 129);
+    border-left: 1px solid lightgrey;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1 .card:hover {
+    background-color: lightgray;
+}
+
+/* section2 */
+
+.section2 .text {
+    padding: 15px 0px;
+    text-align: center;
+}
+.section2 .pic-text {
+    display: flex;
+    justify-content: center;
+}
+.section2 .pic-text .description {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section2 .pic-text .description > *,
+.section2 .pic-text .description ul > * {
+    padding: 13px 0px;
+}
+
+/* section3 */
+
+.section3 {
+    background-color: white;
+}
+.section3 .text {
+    padding: 15px 0px;
+    text-align: center;
+}
+.section3 .section3-body {
+    display: flex;
+    justify-content: center;
+}
+.section3 .section3-body .upper > *,
+.section3 .section3-body .lower > * {
+    padding: 15px;
+}
+.pics {
+    width: 250px;
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.pics:hover {
+    transform: scale(1.05);
+}
+
+/* sidebar*/
+.sidebar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sidebar-content {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 15%;
+    z-index: 1;
+    opacity: 1 !important;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+.sidebar-content > * {
+    font-size: 18px;
+    padding: 8px;
+    border-bottom: 1px solid lightgrey;
+    text-decoration: none;
+    color: lightsteelblue;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(82, 80, 80);
+}
+.footer1 {
+    background-color: #3c3b3b !important;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+}
+.footer1 > * {
+    text-decoration: none;
+    color: gray;
+    padding: 0px 10px;
+}
+.footer1 a:hover {
+    color: white;
+}
+.footer2 {
+    background-color: rgb(82, 80, 80);
+}
+.footer2 .footer2-section1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.footer2 .footer2-section1 .products {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+.footer2 .footer2-section1 .products > * {
+    text-decoration: none;
+    color: gray;
+    padding: 3px 0px;
+}
+.footer2 .footer2-section1 .products p {
+    color: white;
+}
+.footer2 .footer2-section1 .products a:hover {
+    color: white;
+}
+
+.footer2-section2 {
+    margin: 0px 20%;
+    padding: 20px 0px;
+}
+.footer2-section2 hr {
+    text-decoration: dotted;
+}
+.footer2-section2 .footer2-products {
+    padding: 20px 5px;
+    display: flex;
+}
+.footer2-section2 .footer2-products > * {
+    padding: 0px 5px;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+.footer2-section2 .footer2-products a:hover {
+    color: white;
+}
+.footer3 {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.footer3 > * {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    padding: 0px 20px;
+}
+.footer3 > *:hover {
+    color: white;
+}
